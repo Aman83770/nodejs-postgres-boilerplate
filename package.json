@@ -1,0 +1,38 @@
+{
+  "name": "ts-pg-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./dist/server.js --env=production",
+    "dev": "debug=* NODE_PATH=./src ts-node-dev --respawn ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.20",
+    "axios": "^1.6.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "http-status-codes": "^2.3.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.1.13",
+    "tedis": "^0.1.12",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typeorm": "^0.3.17",
+    "typescript": "^5.2.2",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.5",
+    "@types/morgan": "^1.9.7",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.53.0",
+    "ts-node-dev": "^2.0.0"
+  }
+}
